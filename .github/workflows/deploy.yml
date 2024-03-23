@@ -21,16 +21,13 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
       - name: Set up Node.js and pnpm
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '20'
-          cache: "pnpm"
           # Specify the pnpm version here
           # For example, '8.15.3'
           # If you want to use the latest version, you can omit this line
           # version: 'latest'
-      - name: Install dependencies
-        run: pnpm install
       - name: Install, build, and upload your site
         uses: withastro/action@v2
         with:
