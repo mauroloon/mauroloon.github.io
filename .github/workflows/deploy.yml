@@ -21,7 +21,7 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
       - name: Set up Node.js and pnpm
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
           # Specify the pnpm version here
@@ -29,7 +29,7 @@ jobs:
           # If you want to use the latest version, you can omit this line
           # version: 'latest'
       - name: Install, build, and upload your site
-        uses: withastro/action@v2
+        uses: withastro/action@v3
         with:
           version: 8
           # path: . # The root location of your Astro project inside the repository. (optional)
