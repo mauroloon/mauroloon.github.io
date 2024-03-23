@@ -16,5 +16,7 @@
     "pnpm": "^8.15.3",
     "typescript": "^5.3.3"
   },
-  "package-manager": "^pnpm@6.32.4"
+  "pnpm": {
+    "version": "6.32.4"
+  }
 }
